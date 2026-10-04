@@ -1,0 +1,28 @@
+﻿  Book.cpp
+E:\编程\图书馆\tushuguan02\Librarywhy\Librarywhy\book.h(17,98): error C2061: 语法错误: 标识符“isBorrowed”
+  (编译源文件“Book.cpp”)
+  
+E:\编程\图书馆\tushuguan02\Librarywhy\Librarywhy\Book.cpp(18,103): error C2061: 语法错误: 标识符“isBorrowed”
+  Librarywhy.cpp
+  User.cpp
+E:\编程\图书馆\tushuguan02\Librarywhy\Librarywhy\User.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“User.cpp”)
+  
+E:\编程\图书馆\tushuguan02\Librarywhy\Librarywhy\book.h(17,98): error C2061: 语法错误: 标识符“isBorrowed”
+  (编译源文件“User.cpp”)
+  
+E:\编程\图书馆\tushuguan02\Librarywhy\Librarywhy\User.h(12,15): error C3646: “m_records”: 未知重写说明符
+  (编译源文件“User.cpp”)
+  
+E:\编程\图书馆\tushuguan02\Librarywhy\Librarywhy\User.h(12,24): error C2143: 语法错误: 缺少“,”(在“[”的前面)
+  (编译源文件“User.cpp”)
+  
+E:\编程\图书馆\tushuguan02\Librarywhy\Librarywhy\User.h(12,28): error C2238: 意外的标记位于“;”之前
+  (编译源文件“User.cpp”)
+  
+E:\编程\图书馆\tushuguan02\Librarywhy\Librarywhy\User.cpp(9,4): error C2065: “cout”: 未声明的标识符
+E:\编程\图书馆\tushuguan02\Librarywhy\Librarywhy\User.cpp(9,41): error C2065: “endl”: 未声明的标识符
+E:\编程\图书馆\tushuguan02\Librarywhy\Librarywhy\User.cpp(14,4): error C2065: “m_records”: 未声明的标识符
+E:\编程\图书馆\tushuguan02\Librarywhy\Librarywhy\User.cpp(21,3): error C2065: “cout”: 未声明的标识符
+E:\编程\图书馆\tushuguan02\Librarywhy\Librarywhy\User.cpp(21,50): error C2065: “endl”: 未声明的标识符
+  正在生成代码...
