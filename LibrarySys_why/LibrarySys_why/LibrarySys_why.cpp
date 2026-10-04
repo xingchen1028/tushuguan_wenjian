@@ -1,11 +1,50 @@
 ﻿// LibrarySys_why.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
-
+#include <windows.h>
 #include <iostream>
+#include "book.h"
+#include "User.h"
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    SetConsoleOutputCP(65001); //设置控制台输出为UTF-8
+    SetConsoleCP(65001);
+
+    // 创建图书对象
+    Book b1("C++程序设计", "张力生", "清华大学出版社", "9787302632900", "B001",59.9,288, false);
+    Book b2("数据结构", "蔡茂蓉", "西南大学出版社", "9787569733747", "B002",42.8,145, false);
+
+    // 校验ISBN
+    if (b1.checkISBNValid())
+        cout << "b1 ISBN合法" << endl;
+    else
+        cout << "b1 ISBN不合法" << endl;
+
+    b1.display();
+
+    // 创建学生
+    User stu("张三", "2025001", 0, 3);
+    stu.display();
+
+    // 测试借书
+    stu.borrowBook(b1);
+    stu.displayRecords();
+    b1.display();
+
+    // 再次借同一本书（失败）
+    stu.borrowBook(b1);
+
+    // 借第二本书
+    stu.borrowBook(b2);
+    stu.displayRecords();
+
+    // 还书
+    stu.returnBook(b1);
+    stu.displayRecords();
+    b1.display();
+
+    return 0;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
